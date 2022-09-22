@@ -1,0 +1,716 @@
+{
+    "asia-east1": {
+        "name": "asia-east1",
+        "location": "Taiwan",
+        "summary": [
+            {
+                "cfe": "0.19",
+                "grid_carbon_intensity": "541",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.18",
+                "grid_carbon_intensity": "540",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.17",
+                "grid_carbon_intensity": "456",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "asia-east2": {
+        "name": "asia-east2",
+        "location": "Hong Kong",
+        "summary": [
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "506",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "453",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.28",
+                "grid_carbon_intensity": "360",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "asia-northeast1": {
+        "name": "asia-northeast1",
+        "location": "Tokyo",
+        "summary": [
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "569",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.12",
+                "grid_carbon_intensity": "554",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.16",
+                "grid_carbon_intensity": "464",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "asia-northeast2": {
+        "name": "asia-northeast2",
+        "location": "Osaka",
+        "summary": [
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "414",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "442",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.31",
+                "grid_carbon_intensity": "384",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "asia-northeast3": {
+        "name": "asia-northeast3",
+        "location": "Seoul",
+        "summary": [
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "490",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.31",
+                "grid_carbon_intensity": "457",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.31",
+                "grid_carbon_intensity": "425",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "asia-south1": {
+        "name": "asia-south1",
+        "location": "Mumbai",
+        "summary": [
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "752",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.12",
+                "grid_carbon_intensity": "721",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.23",
+                "grid_carbon_intensity": "633",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "asia-south2": {
+        "name": "asia-south2",
+        "location": "Delhi",
+        "summary": [
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "657",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.23",
+                "grid_carbon_intensity": "633",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "asia-southeast1": {
+        "name": "asia-southeast1",
+        "location": "Singapore",
+        "summary": [
+            {
+                "cfe": "0.03",
+                "grid_carbon_intensity": "493",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.04",
+                "grid_carbon_intensity": "493",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.04",
+                "grid_carbon_intensity": "372",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "asia-southeast2": {
+        "name": "asia-southeast2",
+        "location": "Jakarta",
+        "summary": [
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "647",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "647",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.13",
+                "grid_carbon_intensity": "580",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "australia-southeast1": {
+        "name": "australia-southeast1",
+        "location": "Sydney",
+        "summary": [
+            {
+                "cfe": "0.11",
+                "grid_carbon_intensity": "725",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.11",
+                "grid_carbon_intensity": "727",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.11",
+                "grid_carbon_intensity": "723",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "australia-southeast2": {
+        "name": "australia-southeast2",
+        "location": "Melbourne",
+        "summary": [
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "691",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.11",
+                "grid_carbon_intensity": "746",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "europe-central2": {
+        "name": "europe-central2",
+        "location": "Warsaw",
+        "summary": [
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "622",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.2",
+                "grid_carbon_intensity": "576",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "europe-north1": {
+        "name": "europe-north1",
+        "location": "Finland",
+        "summary": [
+            {
+                "cfe": "0.77",
+                "grid_carbon_intensity": "181",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.94",
+                "grid_carbon_intensity": "133",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.91",
+                "grid_carbon_intensity": "127",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "europe-southwest1": {
+        "name": "europe-southwest1",
+        "location": "Madrid",
+        "summary": [
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "121",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "europe-west1": {
+        "name": "europe-west1",
+        "location": "Belgium",
+        "summary": [
+            {
+                "cfe": "0.68",
+                "grid_carbon_intensity": "196",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.79",
+                "grid_carbon_intensity": "212",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.82",
+                "grid_carbon_intensity": "110",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "europe-west2": {
+        "name": "europe-west2",
+        "location": "London",
+        "summary": [
+            {
+                "cfe": "0.54",
+                "grid_carbon_intensity": "257",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.59",
+                "grid_carbon_intensity": "231",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.57",
+                "grid_carbon_intensity": "172",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "europe-west3": {
+        "name": "europe-west3",
+        "location": "Frankfurt",
+        "summary": [
+            {
+                "cfe": "0.61",
+                "grid_carbon_intensity": "319",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.63",
+                "grid_carbon_intensity": "293",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.6",
+                "grid_carbon_intensity": "269",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "europe-west4": {
+        "name": "europe-west4",
+        "location": "Netherlands",
+        "summary": [
+            {
+                "cfe": "0.61",
+                "grid_carbon_intensity": "474",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.6",
+                "grid_carbon_intensity": "410",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.53",
+                "grid_carbon_intensity": "283",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "europe-west6": {
+        "name": "europe-west6",
+        "location": "Zurich",
+        "summary": [
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "87",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "87",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.85",
+                "grid_carbon_intensity": "86",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "europe-west8": {
+        "name": "europe-west8",
+        "location": "Milan",
+        "summary": [
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "298",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "europe-west9": {
+        "name": "europe-west9",
+        "location": "Paris",
+        "summary": [
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "59",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "northamerica-northeast1": {
+        "name": "northamerica-northeast1",
+        "location": "Montreal",
+        "summary": [
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "27",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "",
+                "grid_carbon_intensity": "27",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.95",
+                "grid_carbon_intensity": "142",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "northamerica-northeast2": {
+        "name": "northamerica-northeast2",
+        "location": "Toronto",
+        "summary": [
+            {
+                "cfe": "0.86",
+                "grid_carbon_intensity": "142",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "southamerica-east1": {
+        "name": "southamerica-east1",
+        "location": "Sao Paulo",
+        "summary": [
+            {
+                "cfe": "0.87",
+                "grid_carbon_intensity": "109",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.88",
+                "grid_carbon_intensity": "103",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.78",
+                "grid_carbon_intensity": "129",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "southamerica-west1": {
+        "name": "southamerica-west1",
+        "location": "Santiago",
+        "summary": [
+            {
+                "cfe": "0.69",
+                "grid_carbon_intensity": "190",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "us-central1": {
+        "name": "us-central1",
+        "location": "Iowa",
+        "summary": [
+            {
+                "cfe": "0.78",
+                "grid_carbon_intensity": "479",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.93",
+                "grid_carbon_intensity": "454",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.97",
+                "grid_carbon_intensity": "394",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "us-east1": {
+        "name": "us-east1",
+        "location": "South Carolina",
+        "summary": [
+            {
+                "cfe": "0.19",
+                "grid_carbon_intensity": "500",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.27",
+                "grid_carbon_intensity": "480",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.25",
+                "grid_carbon_intensity": "434",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "us-east4": {
+        "name": "us-east4",
+        "location": "Northern Virginia",
+        "summary": [
+            {
+                "cfe": "0.41",
+                "grid_carbon_intensity": "383",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.58",
+                "grid_carbon_intensity": "361",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.64",
+                "grid_carbon_intensity": "309",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "us-east5": {
+        "name": "us-east5",
+        "location": "Columbus",
+        "summary": [
+            {
+                "cfe": "0.64",
+                "grid_carbon_intensity": "309",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "us-south1": {
+        "name": "us-south1",
+        "location": "Dallas",
+        "summary": [
+            {
+                "cfe": "0.4",
+                "grid_carbon_intensity": "296",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "us-west1": {
+        "name": "us-west1",
+        "location": "Oregon",
+        "summary": [
+            {
+                "cfe": "0.89",
+                "grid_carbon_intensity": "117",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.9",
+                "grid_carbon_intensity": "78",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.88",
+                "grid_carbon_intensity": "60",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "us-west2": {
+        "name": "us-west2",
+        "location": "Los Angeles",
+        "summary": [
+            {
+                "cfe": "0.55",
+                "grid_carbon_intensity": "248",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.54",
+                "grid_carbon_intensity": "253",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.53",
+                "grid_carbon_intensity": "190",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "us-west3": {
+        "name": "us-west3",
+        "location": "Salt Lake City",
+        "summary": [
+            {
+                "cfe": "0.25",
+                "grid_carbon_intensity": "561",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.28",
+                "grid_carbon_intensity": "533",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.31",
+                "grid_carbon_intensity": "448",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    },
+    "us-west4": {
+        "name": "us-west4",
+        "location": "Las Vegas",
+        "summary": [
+            {
+                "cfe": "0.13",
+                "grid_carbon_intensity": "491",
+                "net_operational_ghg_emissions": "0",
+                "year": "2019"
+            },
+            {
+                "cfe": "0.19",
+                "grid_carbon_intensity": "455",
+                "net_operational_ghg_emissions": "0",
+                "year": "2020"
+            },
+            {
+                "cfe": "0.21",
+                "grid_carbon_intensity": "365",
+                "net_operational_ghg_emissions": "0",
+                "year": "2021"
+            }
+        ]
+    }
+}
