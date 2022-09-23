@@ -23,5 +23,5 @@ terminus self:plugin:install terminus-carbon-plugin
 On older versions of Terminus:
 ```
 mkdir -p ~/.terminus/plugins
-curl https://github.com/pantheon-systems/terminus-carbon-plugin/archive/2.x.tar.gz -L | tar -C ~/.terminus/plugins -xvz
+curl https://github.com/pantheon-systems/terminus-carbon-plugin/archive/main.tar.gz -L | tar -C ~/.terminus/plugins -xvz
 ```
