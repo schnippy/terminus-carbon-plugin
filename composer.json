@@ -6,11 +6,9 @@
   "authors": [
     {
       "name": "Kyle Taylor",
-      "email": "kyle.taylor@pantheon.io",
+      "email": "kyle.taylor@pantheon.io"
     }
   ],
-  "require": {
-  },
   "require-dev": {
     "phpunit/phpunit": "^9",
     "symfony/yaml": "^5",
