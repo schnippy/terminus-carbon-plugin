@@ -26,8 +26,9 @@ class RegionsCommand extends TerminusCommand
     /**
      * Print region info about the Pantheon regions in Google Cloud.
      *
-     * @command carbon:region:list
-     * @aliases carbon:regions
+     * @command carbon:regions
+     *
+     * @filter-output
      *
      * @option string $region Return info about a specific region.
      *
@@ -39,6 +40,7 @@ class RegionsCommand extends TerminusCommand
      *     continent: Continent
      *     location: Location
      *     region: Region
+     *     region_code: Region Code
      *     coordinates_latitude: Latitude
      *     coordinates_longitude: Longitude
      *     environmental_impact_grid_zone: Grid Zone
@@ -48,20 +50,15 @@ class RegionsCommand extends TerminusCommand
      *     grid_carbon_intensity: Grid Carbon Intensity (gCO2eq/kWh)
      *     year: Reporting Year
      *
-     * @default-fields id,country,region,grid_carbon_intensity,year
+     * @default-fields id,region,grid_carbon_intensity,year
      *
      * @return RowsOfFields
      *
      */
-    public function regionList($options = ['region' => '', 'format' => 'table'])
+    public function regionList()
     {
         $regions = new Regions();
-
         $output = $regions->getRegions();
-        if (!empty($options['region'])) {
-            $output = $regions->filterRegion($options['region']);
-        }
-
         $output = new PropertyList($output);
         return new RowsOfFields($output);
     }
