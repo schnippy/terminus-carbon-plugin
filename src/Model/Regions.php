@@ -88,12 +88,9 @@ class Regions extends TerminusModel
     protected function appendGCPData(array $regions): array
     {
         $gcp_data = json_decode(file_get_contents(__DIR__ . '/../../data/regions.json'), true);
-        foreach ($regions as $region) {
-            if (!empty($region['id']) && !empty($regions[$region['id']])) {
-                $id = $region['id'];
-                $data = end($gcp_data[$id]['summary']);
-                $regions[$id] = array_merge($regions[$id], $data);
-            }
+        foreach ($regions as $id => $region) {
+            $data = end($gcp_data[$id]['summary']);
+            $regions[$id] = array_merge($region, $data);
         }
         return $regions;
     }
