@@ -72,17 +72,30 @@ class Regions extends TerminusModel
         $this->regions = $regions;
     }
 
-    protected function appendGCPData($regions) {
+    /**
+     * Append GCP Carbon data.
+     * @param array $regions
+     * @return array
+     */
+    protected function appendGCPData(array $regions): array
+    {
         $gcp_data = json_decode(file_get_contents(__DIR__ . '/../../data/regions.json'), true);
         foreach ($regions as $region) {
-            $id = $region['id'];
-            $data = end($gcp_data[$id]['summary']);
-            $regions[$id] = array_merge($regions[$id], $data);
+            if (!empty($region['id']) && !empty($regions[$region['id']])) {
+                $id = $region['id'];
+                $data = end($gcp_data[$id]['summary']);
+                $regions[$id] = array_merge($regions[$id], $data);
+            }
         }
         return $regions;
     }
 
-    public function filterRegion($region): ?array
+    /**
+     * Filter regions by region code.
+     * @param string $region
+     * @return array
+     */
+    public function filterRegion(string $region): array
     {
         return array_filter($this->getRegions(), function ($regionArr) use ($region) {
             if (stripos($regionArr['region'], $region) !== false) {

@@ -29,8 +29,6 @@ class RegionsCommand extends TerminusCommand
      * @command carbon:region:list
      * @aliases carbon:regions
      *
-     * @filter-output
-     *
      * @option string $region Return info about a specific region.
      *
      * @usage --region=<us|ca|eu|au> Displays information about the region.
@@ -52,24 +50,19 @@ class RegionsCommand extends TerminusCommand
      *
      * @default-fields id,country,region,grid_carbon_intensity,year
      *
-     * @return PropertyList
+     * @return RowsOfFields
      *
      */
-    public function regionList($options = ['region' => null])
+    public function regionList($options = ['region' => '', 'format' => 'table'])
     {
         $regions = new Regions();
 
-        $region_data = $regions->getRegions();
+        $output = $regions->getRegions();
         if (!empty($options['region'])) {
-            $region_data = $regions->filterRegion($options['region']);
+            $output = $regions->filterRegion($options['region']);
         }
 
-        $output = new PropertyList($region_data);
-
-        if (!empty($options['format']) && in_array($options['format'], ['table', 'list'])) {
-            $output = new RowsOfFields($output);
-        }
-
-        return $output;
+        $output = new PropertyList($output);
+        return new RowsOfFields($output);
     }
 }
