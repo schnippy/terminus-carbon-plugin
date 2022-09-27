@@ -3,6 +3,7 @@
 namespace Pantheon\TerminusCarbon\Model;
 
 use Pantheon\Terminus\Models\TerminusModel;
+use Pantheon\Terminus\Models\Site;
 
 /**
  * Pantheon Region Information.
@@ -123,8 +124,44 @@ class Regions extends TerminusModel
         });
     }
 
+    /**
+     * @return array|string[][]
+     */
     public function getRegions(): array
     {
         return $this->regions;
+    }
+
+    /**
+     * @param Site $site
+     * @return array
+     */
+    public function mergeRegionData(Site $site): array
+    {
+
+        $region_id = $site->get('region');
+        $region_data = $this->filterByRegionId($region_id)[$region_id];
+
+        // Define ideal attributes and serialize site data to merge.
+        $carbon_attributes = ['cfe', 'grid_carbon_intensity', 'datacenter'];
+        $site_data = $site->serialize();
+
+        // Merge carbon data
+        foreach ($region_data as $attr => $value) {
+            if (in_array($attr, $carbon_attributes)) {
+                $site_data[$attr] = $value;
+            }
+        }
+
+        // Merge upstream data
+        $upstream = $site->getUpstream()->attributes;
+        $site_data = array_merge($site_data, [
+            'upstream_id' => $upstream->id,
+            'upstream_machine_name' => $upstream->machine_name,
+            'upstream_label' => $upstream->label,
+            'upstream_repository_url' => $upstream->repository_url,
+        ]);
+
+        return $site_data;
     }
 }

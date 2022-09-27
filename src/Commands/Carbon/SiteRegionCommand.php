@@ -28,36 +28,27 @@ class SiteRegionCommand extends SiteCommand
      *     region: Region
      *     organization: Organization
      *     plan_name: Plan
-     *     upstream: Upstream
+     *     upstream_id: Upstream ID
+     *     upstream_machine_name: Upstream Name
+     *     upstream_label: Upstream Label
+     *     upstream_repository_url: Upstream URL
      *     owner: Owner
      *     datacenter: Datacenter
      *     cfe: Carbon Free Energy % (CFE)
      *     grid_carbon_intensity: Grid Carbon Intensity (gCO2eq/kWh)
      *
-     * @return PropertyList
+     * @default-fields id,name,framework,upstream_name,region,datacenter,cfe,grid_carbon_intensity
      *
      * @param string $site The name or UUID of a site to retrieve information on
-     *
      * @usage <site> Displays <site>'s information with carbon data.
+     * @return PropertyList
+     *
      */
-    public function carbonInfo($site)
+    public function carbonInfo(string $site)
     {
         $site = $this->sites->get($site);
-        $region_id = $site->get('region');
         $region = new Regions();
-        $region_data = $region->filterByRegionId($region_id)[$region_id];
-
-        // Define ideal attributes and serialize site data to merge.
-        $carbon_attributes = ['cfe', 'grid_carbon_intensity', 'datacenter'];
-        $site = $site->serialize();
-
-        // Merge carbon data
-        foreach ($region_data as $attr => $value) {
-            if (in_array($attr, $carbon_attributes)) {
-                $site[$attr] = $value;
-            }
-        }
-
-        return new PropertyList($site);
+        $siteData = $region->mergeRegionData($site);
+        return new PropertyList($siteData);
     }
 }
