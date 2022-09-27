@@ -9,9 +9,11 @@ A Terminus plugin for fetching carbon impact and other sustainability data.
 These commands require no configuration
 
 ## Usage
-* `terminus carbon:info`: Displays carbon information about a site. 
-* `terminus carbon:org`: Displays the list of sites associated with an organization with carbon data.
 * `terminus carbon:regions`: Print region info about the Pantheon regions in Google Cloud.
+* `terminus carbon:info`: Displays carbon information about a site.
+* `terminus carbon:env`: Displays carbon information in addition to a summary of container services for an environment.
+* `terminus carbon:org`: Displays the list of sites associated with an organization with carbon data.
+
 
 ## Installation
 
