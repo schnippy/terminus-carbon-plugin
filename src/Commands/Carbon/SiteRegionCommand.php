@@ -37,7 +37,7 @@ class SiteRegionCommand extends SiteCommand
      *     cfe: Carbon Free Energy % (CFE)
      *     grid_carbon_intensity: Grid Carbon Intensity (gCO2eq/kWh)
      *
-     * @default-fields id,name,framework,upstream_machine_name,region,datacenter,cfe,grid_carbon_intensity
+     * @default-fields id,name,upstream_machine_name,region,datacenter,cfe,grid_carbon_intensity
      *
      * @param string $site The name or UUID of a site to retrieve information on
      * @usage <site> Displays <site>'s information with carbon data.

@@ -47,8 +47,10 @@ class SiteEnvRegionCommand extends TerminusCommand implements SiteAwareInterface
      *     dbserver: Database Container (qty)
      *     indexserver: Search Container (qty)
      *     cacheserver: Object Cache Container (qty)
+     *     cms_kind: CMS Kind
+     *     cms_version: CMS Version
      *
-     * @default-fields id,name,framework,upstream_machine_name,region,datacenter,cfe,grid_carbon_intensity,appserver,dbserver,indexserver,cacheserver
+     * @default-fields id,name,cms_kind,cms_version,upstream_machine_name,region,datacenter,cfe,grid_carbon_intensity,appserver,dbserver,indexserver,cacheserver
      *
      * @return PropertyList
      *
@@ -62,6 +64,7 @@ class SiteEnvRegionCommand extends TerminusCommand implements SiteAwareInterface
 
         $env = $this->getEnv($site_env);
         $site = $this->getSite($site_env);
+
         $region = new Regions();
         $site_data = $region->mergeRegionData($site);
 
@@ -87,7 +90,17 @@ class SiteEnvRegionCommand extends TerminusCommand implements SiteAwareInterface
                 $carbonEnv->set($binding_type, $type_count + 1);
             }
         }
-        $site_data = array_merge($site_data, $carbonEnv->serialize());
+
+        // Extract runtime info, append score.
+        $runtime = json_decode(json_encode($env->get('framework_runtime')), true);
+        foreach ($runtime as $key => $value) {
+            if (in_array($key, ['kind', 'version'])) {
+                $runtime['cms_' . $key] = $value;
+            }
+            unset($runtime[$key]);
+        }
+
+        $site_data = array_merge($site_data, $carbonEnv->serialize(), $runtime);
 
         return new PropertyList($site_data);
     }
